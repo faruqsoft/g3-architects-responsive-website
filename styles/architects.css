@@ -68,8 +68,10 @@ main >section {
 
 /*nav related styles*/
 .navbar {
+    display: flex;
     justify-content: space-between;
     align-items: center;
+
 
 }
 .nav-item {
@@ -91,6 +93,8 @@ main >section {
     font-weight: bold;
     font-size: 3rem;
 }
+
+
 /*banner style*/
 
 .banner-info {
@@ -116,12 +120,7 @@ main >section {
 }
 
 /*responsive media query*/
-@media screen and (max-width: 576px) {
-    .navbar,.nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 /*team and features realated style*/
 .teams {
@@ -164,11 +163,7 @@ margin-bottom: 24px;
     margin-bottom: 32px;
 }
 
-@media screen and (max-width: 576px) {
-    .teams {
-        flex-direction: column;
-    }
-}
+
 
 /*some facts style*/
 .fact-title {
@@ -246,5 +241,12 @@ margin-bottom: 24px;
     color: var(--dark-2);
     padding: 38px 420px;
 
+
+}
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        border: 1px solid red;
+    }
 
 }
